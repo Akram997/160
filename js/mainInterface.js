@@ -161,19 +161,21 @@ $(function () {
             }
         }
     })
-    $.post({
-        url: "http://localhost/exercises/php/shopp.json",
-        success(data) {
-            let num = Object.keys(data).length;
-            let j = 0;
-            for (let i = 0; i < num; i++) {
-                if (data[i].zhanghao == 13249170088) {
-                    j++;
+    if (ID != "null" && PD != "null") {
+        $.post({
+            url: "http://localhost/exercises/php/shopp.json",
+            success(data) {
+                let num = Object.keys(data).length;
+                let j = 0;
+                for (let i = 0; i < num; i++) {
+                    if (data[i].zhanghao == 13249170088) {
+                        j++;
+                    }
                 }
+                $(".sliang").text(`(${j})`)
             }
-            $(".sliang").text(`(${j})`)
-        }
-    })
+        })
+    }
     $.post({
         url: "http://localhost/exercises/php/mainInterface.json",
         success(data) {

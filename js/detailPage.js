@@ -34,29 +34,34 @@ $(function () {
         $(".nums").text(num);
     })
     $(".ajax").click(function () {
-        $.post({
-            url: "http://localhost/exercises/php/shopp.php",
-            data: {
-                "img": $(".Bimg").attr("src"),
-                "span": $(".aspan").text(),
-                "i": $(".ai").text(),
-                "nums": $(".nums").text(),
-                "zhanghao": $(".zhanghao").text()
-            }
-        })
+        if (ID != "null" && PD != "null") {
+            $.post({
+                url: "http://localhost/exercises/php/shopp.php",
+                data: {
+                    "img": $(".Bimg").attr("src"),
+                    "span": $(".aspan").text(),
+                    "i": $(".ai").text(),
+                    "nums": $(".nums").text(),
+                    "zhanghao": $(".zhanghao").text()
+                }
+            })
+        }
+        alert("请登录");
         return false;
     })
-    $.post({
-        url: "http://localhost/exercises/php/shopp.json",
-        success(data) {
-            let num = Object.keys(data).length;
-            let j = 0;
-            for (let i = 0; i < num; i++) {
-                if (data[i].zhanghao == 13249170088) {
-                    j++;
+    if (ID != "null" && PD != "null") {
+        $.post({
+            url: "http://localhost/exercises/php/shopp.json",
+            success(data) {
+                let num = Object.keys(data).length;
+                let j = 0;
+                for (let i = 0; i < num; i++) {
+                    if (data[i].zhanghao == 13249170088) {
+                        j++;
+                    }
                 }
+                $(".sliang").text(`(${j})`)
             }
-            $(".sliang").text(`(${j})`)
-        }
-    })
+        })
+    }
 })
