@@ -1,0 +1,357 @@
+html,
+body {
+    height: 100%;
+}
+
+#enroll {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    height: 72px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header a {
+    float: left;
+    background: url(../images/logo.jpg) no-repeat left center;
+    text-indent: -9999px;
+    height: 55PX;
+    margin-top: 16px;
+    width: 260px;
+    margin-left: 4px;
+}
+
+.header p {
+    float: left;
+    font-size: 22px;
+    color: #797979;
+    line-height: 22px;
+    margin-top: 43px;
+    margin-left: 10px;
+}
+
+/* main */
+.main {
+    height: 882px;
+    background: url(../images/register_bg.png) center center;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.box {
+    width: 1000px;
+    height: 862px;
+    margin: 0 auto;
+    background: white;
+    box-sizing: border-box;
+}
+
+.box>p {
+    font-size: 22px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    width: 93px;
+    border-bottom: 1px solid #0996d4;
+}
+
+.box .hr {
+    display: block;
+    height: 1px;
+    width: 960px;
+    background: #e4e4e4;
+    margin-left: 40px;
+}
+
+.box .specific p:nth-child(1) {
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 117px;
+    margin-left: 210px;
+    margin-bottom: 32px;
+}
+
+input {
+    border: 1px solid #e5e5e5;
+    height: 40px;
+    background: #fefefe;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 38px;
+}
+
+input:hover {
+    border: 1px solid #b7d66d;
+}
+
+input:focus {
+    outline: 1px solid #b7d66d;
+}
+
+label {
+    font-size: 12px;
+    color: #666666;
+    float: left;
+    margin-right: 15px;
+    line-height: 12px;
+    margin-top: 16px;
+}
+
+input::-webkit-input-placeholder {
+    color: #e3e3e3;
+}
+
+.box .specific .gvc {
+    display: inline-block;
+    height: 42px;
+    width: 143px;
+    background: #f3fbfe;
+    float: right;
+    margin-right: 411px;
+    color: #666666;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box .specific .mac {
+    width: 132px;
+    height: 42px;
+    float: right;
+    margin-right: 415px;
+    background: #22ac38;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    
+}
+.box .specific .mac:hover{
+    background: #43d65b;
+}
+
+.box .specific .res {
+    font-size: 12px;
+    line-height: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-left: 230px;
+    margin-bottom: 42px;
+}
+
+.box .specific .res a {
+    color: #0093d0;
+}
+
+.box .specific .button {
+    height: 54px;
+    width: 270px;
+    background: #00a0e9;
+    border: none;
+    border-radius: 2px;
+    margin-left: 210px;
+    color: white;
+}
+.box .specific .button:hover{
+    background: #2db3f1;
+}
+
+.box .specific .to {
+    display: inline-block;
+    float: right;
+    margin-right: 210px;
+    height: 40px;
+    line-height: 40px;
+    color: red;
+    font-size: 15px;
+    font-size: 12px;
+    width: 200px;
+}
+
+
+/* footer */
+.main2 {
+    border-bottom: 1px solid #e4e4e4;
+    height: 133px;
+}
+
+.box1 ul {
+    display: flex;
+    align-items: center;
+    height: 133px;
+}
+
+.box1 ul li {
+    width: 297px;
+    height: 48px;
+}
+
+.box1 ul .span {
+    display: inline-block;
+    height: 48px;
+    border-right: 1px solid #ccc;
+    float: right;
+    margin-top: 5px;
+}
+
+.box1 ul li:nth-child(1) p {
+    display: inline-block;
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    width: 52px;
+    height: 52px;
+    background-position: -6px -4px;
+}
+
+.box1 ul li:nth-child(3) p {
+    display: inline-block;
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    width: 52px;
+    height: 52px;
+    background-position: -62px -4px;
+}
+
+.box1 ul li:nth-child(5) p {
+    display: inline-block;
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    width: 52px;
+    height: 52px;
+    background-position: -120px -4px;
+}
+
+.box1 ul li:nth-child(7) p {
+    display: inline-block;
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    width: 52px;
+    height: 52px;
+    background-position: -177px -4px;
+}
+
+.box1 ul li .sss {
+    float: right;
+    margin-right: 85px;
+    margin-top: 5px;
+}
+
+.box1 ul li .zzz {
+    float: right;
+    margin-right: 115px;
+    margin-top: 5px;
+}
+
+.box1 ul li .one {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 5px;
+    font-weight: 900;
+}
+
+.box1 ul li .tow {
+    display: block;
+    font-size: 17px;
+    line-height: 17px;
+    color: #999;
+}
+
+.specific .none {
+    display: none;
+}
+
+/* footer */
+.footer {
+    height: 320px;
+}
+
+.footer .no1 {
+    line-height: 20px;
+    width: 959px;
+    margin-left: 84px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+    margin-bottom: 110px;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li a {
+    color: black;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.footer .no2 {
+    margin: 0 auto;
+    height: 20px;
+    width: 297px;
+    margin-bottom: 25px;
+}
+
+.footer .no2 li {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .no2 a {
+    display: inline-block;
+    border-right: 2px solid #666;
+    padding: 0px 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .no2 li:nth-child(2) a {
+    margin-right: 15px;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 267px;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #0000ee;
+}
+
+.footer .img a {
+    display: block;
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.footer .img1 a {
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    background-position: -10px -152px;
+    width: 112px;
+}
+
+.footer .img2 a {
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    background-position: -132px -152px;
+    width: 109px;
+}
+
+.footer .img3 a {
+    background: url(../images/fn_g_footer.png) no-repeat top left;
+    background-position: -11px -201px;
+    width: 96px;
+}
+
+.footer .imgbox {
+    width: 337px;
+    margin: 34px 37%;
+}
